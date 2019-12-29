@@ -1,9 +1,9 @@
 # Student-Banner-System
 This project was developed as a final project for the COE418 - Database Systems offered at Lebanese American University.
 
-Instructor: Dr. Joe M. Tekli
-Students: Elie Raad, Rita Mahfoud and Abdel Kader Fattouh
-Date: Fall 2018
+Instructor: Dr. Joe M. Tekli<br>
+Students: Elie Raad, Rita Mahfoud and Abdel Kader Fattouh<br>
+Date: Fall 2018<br>
 
 Presentation: https://lauedu74602-my.sharepoint.com/:p:/g/personal/elie_raad01_lau_edu/EZvwA-z-xZVOoR8xehXv-o4Bs1yOKrabEPJKnBstkMUnIQ?e=aevXQd
 
