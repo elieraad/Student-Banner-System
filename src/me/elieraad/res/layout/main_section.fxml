@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.elieraad.controller.MainController">
+   <ImageView fx:id="gradesButton" fitHeight="120.0" fitWidth="120.0" layoutX="310.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="310.0" AnchorPane.topAnchor="40.0">
+      <Image url="@../drawable/grades_icon.jpg" />
+   </ImageView>
+   <ImageView fx:id="registerButton" fitHeight="120.0" fitWidth="120.0" layoutX="170.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="310.0" AnchorPane.topAnchor="40.0">
+      <Image url="@../drawable/register_icon.jpg" />
+   </ImageView>
+   <ImageView fx:id="statButton" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="180.0">
+      <Image url="@../drawable/stat_icon.jpg" />
+   </ImageView>
+   <ImageView fx:id="searchButton" fitHeight="120.0" fitWidth="120.0" layoutX="122.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="180.0">
+      <Image url="@../drawable/search_icon.jpg" />
+   </ImageView>
+   <Label text="Students Registered:" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="350.0" />
+   <Label layoutX="110.0" layoutY="360.0" text="Classes offered:" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="350.0" />
+   <Label fx:id="studentCountLabel" layoutX="110.0" layoutY="360.0" text="StudentCount" AnchorPane.leftAnchor="225.0" AnchorPane.topAnchor="350.0" />
+   <Label fx:id="classCountLabel" layoutX="360.0" layoutY="360.0" text="ClassCount" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="350.0" />
+</AnchorPane>

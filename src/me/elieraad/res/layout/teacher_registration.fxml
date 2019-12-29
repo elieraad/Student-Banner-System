@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.elieraad.controller.TeacherRegController">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1200.0" prefWidth="604.0">
+        <Label layoutX="22.0" layoutY="14.0" text="Teacher">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="22.0" layoutY="53.0" text="First Name" />
+        <Label layoutX="231.0" layoutY="53.0" text="Last Name" />
+        <TextField fx:id="teacherFName" layoutX="23.0" layoutY="70.0" />
+        <TextField fx:id="teacherLName" layoutX="231.0" layoutY="70.0" />
+        <Label layoutX="23.0" layoutY="107.0" text="Date of birth" />
+        <Label layoutX="231.0" layoutY="107.0" text="Phone Number " />
+        <TextField fx:id="teacherPhoneNum" layoutX="231.0" layoutY="124.0" />
+        <Label layoutX="23.0" layoutY="166.0" text="Contract Start Date" />
+        <Label layoutX="231.0" layoutY="166.0" text="Contract End Date" />
+        <Button fx:id="addEmployment" layoutX="217.0" layoutY="892.0" mnemonicParsing="false" text="Add Record" />
+        <Button fx:id="addDegree" layoutX="122.0" layoutY="892.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Add Degree" />
+        <Label layoutX="24.0" layoutY="300.0" prefWidth="167.0" text="Employment Record">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="23.0" layoutY="333.0" text="School Name" />
+        <Label layoutX="236.0" layoutY="385.0" prefHeight="0.0" prefWidth="28.0" text="Class" />
+        <Label layoutX="23.0" layoutY="385.0" text="Subject" />
+        <Label layoutX="236.0" layoutY="436.0" text="End Date" />
+        <Label layoutX="26.0" layoutY="436.0" text="Start Date" />
+        <Label layoutX="26.0" layoutY="503.0" text="Degree">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <TextField fx:id="schoolName" layoutX="24.0" layoutY="350.0" />
+        <TextField fx:id="university" layoutX="21.0" layoutY="553.0" />
+        <TextField fx:id="major" layoutX="229.0" layoutY="553.0" />
+        <TextField fx:id="gradYear" layoutX="229.0" layoutY="610.0" />
+        <Label layoutX="26.0" layoutY="536.0" text="University" />
+        <Label layoutX="229.0" layoutY="536.0" text="Major" />
+        <Label layoutX="26.0" layoutY="593.0" text="Degree Level" />
+        <Label layoutX="229.0" layoutY="593.0" text="Graduation Year" />
+        <Label layoutX="25.0" layoutY="223.0" text="Contract Type" AnchorPane.leftAnchor="25.0" />
+        <DatePicker fx:id="teacherDOB" layoutX="21.0" layoutY="124.0" prefHeight="25.0" prefWidth="152.0" />
+        <DatePicker fx:id="contractStart" layoutX="23.0" layoutY="183.0" prefHeight="25.0" prefWidth="152.0" />
+        <DatePicker fx:id="contractEnd" layoutX="231.0" layoutY="183.0" prefHeight="25.0" prefWidth="152.0" />
+        <ChoiceBox fx:id="contractType" layoutX="24.0" layoutY="240.0" prefWidth="150.0" value="Part-Time">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Part-Time" />
+                    <String fx:value="Full-Time Elementary" />
+                    <String fx:value="Full-Time Middle" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+        <MenuButton fx:id="subjectList" layoutX="25.0" layoutY="402.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Select Subjects">
+            <items>
+                <CheckMenuItem text="Math" />
+                <CheckMenuItem text="Physics" />
+                <CheckMenuItem text="Chemistry" />
+                <CheckMenuItem text="Biology" />
+                <CheckMenuItem text="History" />
+                <CheckMenuItem text="Civics" />
+                <CheckMenuItem text="Geography" />
+                <CheckMenuItem text="Economics" />
+                <CheckMenuItem text="Sociology" />
+                <CheckMenuItem text="Arabic" />
+                <CheckMenuItem text="French" />
+                <CheckMenuItem text="English" />
+                <CheckMenuItem text="Physical Education" />
+                <CheckMenuItem text="Information Technology" />
+            </items>
+        </MenuButton>
+
+        <MenuButton fx:id="classList" layoutX="233.0" layoutY="402.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Select Classes">
+            <items>
+                <CheckMenuItem text="Grade 1" />
+                <CheckMenuItem text="Grade 2" />
+                <CheckMenuItem text="Grade 3" />
+                <CheckMenuItem text="Grade 4" />
+                <CheckMenuItem text="Grade 5" />
+                <CheckMenuItem text="Grade 6" />
+                <CheckMenuItem text="Grade 7" />
+                <CheckMenuItem text="Grade 8" />
+                <CheckMenuItem text="Grade 9" />
+            </items>
+        </MenuButton>
+        <DatePicker fx:id="recordStart" layoutX="24.0" layoutY="453.0" prefHeight="25.0" prefWidth="152.0" />
+        <DatePicker fx:id="recordEnd" layoutX="232.0" layoutY="453.0" prefHeight="25.0" prefWidth="152.0" />
+        <ChoiceBox fx:id="degreeLevel" layoutX="22.0" layoutY="610.0" prefWidth="150.0" value="Bachelor">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Bachelor" />
+                    <String fx:value="Masters" />
+                    <String fx:value="PhD" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+        <Button id="addTeacher" fx:id="addTeacher" layoutX="22.0" layoutY="892.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Add Teacher" />
+      <Button fx:id="backButton" layoutX="22.0" layoutY="943.0" mnemonicParsing="false" text="Back" />
+      <Label layoutX="22.0" layoutY="673.0" text="Courses">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="assignedClass" layoutX="23.0" layoutY="726.0" prefWidth="150.0" />
+      <Label layoutX="24.0" layoutY="709.0" text="Class Level" />
+      <ChoiceBox fx:id="assignedSubject" layoutX="227.0" layoutY="726.0" prefWidth="150.0" />
+      <Label layoutX="228.0" layoutY="709.0" text="Subject" />
+      <MenuButton fx:id="assignedSections" layoutX="23.0" layoutY="788.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Select Sections" />
+      <Label layoutX="24.0" layoutY="771.0" text="Sections" />
+      <Button fx:id="assignCourse" layoutX="308.0" layoutY="892.0" mnemonicParsing="false" text="Assign Course" />
+    </AnchorPane>
+</ScrollPane>

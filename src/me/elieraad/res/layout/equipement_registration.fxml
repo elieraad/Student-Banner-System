@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="24.0" layoutY="23.0" text="Equipment">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="64.0" text="Category" />
+      <Label layoutX="252.0" layoutY="64.0" text="Type" />
+      <Label layoutX="26.0" layoutY="118.0" text="Reciept number" />
+      <Label layoutX="248.0" layoutY="118.0" text="Status" />
+      <TextField layoutX="21.0" layoutY="82.0" />
+      <TextField layoutX="251.0" layoutY="82.0" />
+      <TextField layoutX="21.0" layoutY="139.0" />
+      <ChoiceBox layoutX="250.0" layoutY="139.0" prefWidth="150.0" />
+   </children>
+</Pane>
